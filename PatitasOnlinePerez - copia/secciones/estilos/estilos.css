@@ -1,0 +1,272 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: rgb(221, 174, 246);
+    color: #000;
+    position: static;
+    padding: 3px;
+    text-align: right;
+    border: 5px double purple;
+}
+
+h1 {
+    color: purple;
+    font-style: oblique;
+    font-size: 55px;
+    text-align: center;
+}
+
+.contenedor{
+     height: auto;
+     width: 100%;
+     background-color: #d39fd3;
+     display: grid;
+     grid-template-columns: repeat(3,1fr);
+     grid-template-rows: 200px 200px;
+     box-sizing: border-box;
+     position: relative;
+     cursor: pointer;
+     overflow: hidden;
+    }
+
+.item{ 
+border: 2px solid rgb(183, 128, 190);
+font-family: "Sriracha"
+}
+
+
+
+.item1{
+background-image: url(../multimedia/naruto.jpeg);
+    position: relative;
+    background-position: center;
+    background-size: cover;
+    font-size: 30px;
+    font-style: oblique bold;
+}
+
+.item1::before { 
+    content: "Naruto";
+    position: absolute;
+    top: 0%;
+    bottom: 0%;
+    right: 0%;
+    left: 0%;
+    transform: scale(0);
+    transition: transform .4s;
+}
+
+.item1:hover::before{
+    transform: scale(1); 
+}
+
+.item2{ 
+    background-image: url(../multimedia/milo.jpeg);
+    position: relative;
+    background-position: center;
+    background-size: cover;
+    font-size: 30px;
+    font-style: oblique bold;
+    }
+
+    .item2::before { 
+        content: "Milo";
+        position: absolute;
+        top: 0%;
+        bottom: 0%;
+        right: 0%;
+        left: 0%;
+        transform: scale(0);
+        transition: transform .4s;
+    }
+
+    .item2:hover::before{
+        transform: scale(1); 
+    }
+
+    .item3{ 
+        background-image: url(../multimedia/gatonaranja.jpg);
+        position: relative;
+        background-position: center;
+        background-size: cover;
+        font-size: 30px;
+        font-style: oblique bold;
+        }
+
+        .item3::before { 
+            content: "Ginger";
+            position: absolute;
+            top: 0%;
+            bottom: 0%;
+            right: 0%;
+            left: 0%;
+            transform: scale(0);
+            transition: transform .4s;
+        }
+    
+        .item3:hover::before{
+            transform: scale(1); 
+        }
+
+        .item4{ 
+            background-image: url(../multimedia/gatonegro.jpg);
+            position: relative;
+            background-position: center;
+            background-size: cover;
+            font-size: 30px;
+            font-style: oblique bold;
+            }
+
+            .item4::before { 
+                content: "Luna";
+                position: absolute;
+                top: 0%;
+                bottom: 0%;
+                right: 0%;
+                left: 0%;
+                transform: scale(0);
+                transition: transform .4s;
+            }
+        
+            .item4:hover::before{
+                transform: scale(1); 
+            }
+
+            .item5{ 
+                background-image: url(../multimedia/gatosiames.jpg);
+                position: relative;
+                background-position: center;
+                background-size: cover;
+                font-size: 30px;
+                font-style: oblique bold;
+                }
+
+                .item5::before { 
+                    content: "Samuel";
+                    position: absolute;
+                    top: 0%;
+                    bottom: 0%;
+                    right: 0%;
+                    left: 0%;
+                    transform: scale(0);
+                    transition: transform .4s;
+                }
+            
+                .item5:hover::before{
+                    transform: scale(1); 
+                }
+
+                .item6{ 
+                    background-image: url(../multimedia/gato3colores.jpg);
+                    position: relative;
+                    background-position: center;
+                    background-size: cover;
+                    font-size: 30px;
+                    font-style: bold;
+                    }
+
+                    .item6::before { 
+                        content: "Neko";
+                        position: absolute;
+                        top: 0%;
+                        bottom: 0%;
+                        right: 0%;
+                        left: 0%;
+                        transform: scale(0);
+                        transition: transform .4s;
+                    }
+                
+                    .item6:hover::before{
+                        transform: scale(1); 
+                    }
+
+h2 {
+    text-align: center;
+}
+
+img {
+    border: 10px double purple;
+    height: 170px;
+    width: 170px;
+    border-radius: 100%;
+}
+
+.barra {
+    list-style: none;
+    margin-right: 20px;
+}
+
+.barra>ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    list-style-type: none;
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+}
+
+li>a {
+    font-size: 14px;
+    margin-top: 0;
+}
+
+main {
+    background-color: rgb(239, 226, 252);
+    overflow-y: auto;
+    padding: 5%;
+}
+
+p {
+    font-family: "Sriracha", cursive;
+    font-size: 20px;
+}
+
+ul {
+    font-family: "Sriracha", cursive;
+    font-size: 18px;
+}
+
+.preguntas>ul {
+    list-style-type: none;
+}
+
+form {
+    display: flex;
+    font-family: "Sriracha", cursive;
+    font-size: 18px;
+    margin: 2% 0%;
+    flex-direction: column;
+}
+
+.radios {
+    accent-color: purple;
+}
+
+.form>b {
+    margin-bottom: 10%;
+}
+
+.buttonxd {
+    background-color: rgb(221, 174, 246);
+    border: double purple;
+    padding: 5px 20px;
+    margin-top: 2%;
+    border-radius: 5px;
+}
+
+footer {
+    background-color: rgb(221, 174, 246);
+    color: #000;
+    padding: 3px;
+    text-align: right;
+    border: 5px double purple;
+}

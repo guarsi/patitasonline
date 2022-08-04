@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="estilos/estilos.css" />
+    <link rel="shortcut icon" href="multimedia/pediatria_felina_web.jpg" type="image/x-icon" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Sriracha&display=swap" />
+    <title>Registro</title>
+</head>
+
+<body>
+    <header>
+        <nav class="barra">
+            <ul>
+                <li><a href="adoptaYa.html"> Adopta ya </a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="iniciarSesion.html">Iniciar Sesión</a></li>
+                <li><a href="registrarse.html">Registrarse</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>Registrarse</h1>
+        <div class="center">
+            <img width="10%" src="multimedia/chococatSentado.png"
+                alt="Imagen de Chococat sentado con un collar violeta  que lleva una flor de este mismo color" />
+            <p>
+                Hola, bienvenido a Patitas Online, para encontrar a tu próximo
+                compañer@ peludo es necesario crear un usuario pero no te preocupes,
+                es super fácil, solamente seguí las instrucciones de Chococat:
+            </p>
+
+            <form action="">
+                <label for="nombreApellido"> <b>1- Nombre y apellido</b></label>
+                <input type="text" name="nombreApellido" />
+                <br />
+
+                <label for="dni"> <b>2- DNI</b> </label>
+                <input type="number" name="dni" />
+                <br />
+                <div>
+                    <label for="sexo "> <b>3- Sexo</b> </label> <br />
+                    <input class="radios" type="radio" name="sexo" /> Mujer
+                    <input class="radios" type="radio" name="sexo" /> Hombre
+                    <input class="radios" type="radio" name="sexo" /> No binario
+                </div>
+                <br />
+
+                <label for="fechaNacimiento"> <b>4- Fecha de nacimiento</b> </label>
+                <input type="date" name="fechaNacimiento" />
+                <br />
+                <label for="e-mail"> <b>5- E-mail</b></label>
+                <input type="email" name="e-mail" />
+                <br />
+
+                <label for="usuario"> <b> 6- Usuario</b></label>
+                <input type="text" name="usuario" />
+                <label for="contraseña"> <b>7- Contraseña</b> </label>
+                <input type="password" name="contraseña" />
+
+                <br />
+                <button class="buttonxd" type="submit">Completar Registro</button>
+            </form>
+        </div>
+    </main>
+    <footer>
+        <!-- Footer reutilizable -->
+        <ul>
+            <li><a href="../index.html">Inicio</a></li>
+            <li><a href="adoptaYa.html"> Adopta ya </a></li>
+            <li><a href="registrarse.html">Registrarse</a></li>
+            <li><a href="iniciarSesion.html">Iniciar Sesión</a></li>
+            <li><a href="contacto.html">Contacto </a></li>
+        </ul>
+    </footer>
+</body>
+
+</html>
